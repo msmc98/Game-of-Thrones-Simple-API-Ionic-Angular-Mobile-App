@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{dataProfile.get('imageUrl')}}" width="100%" />
+    <ion-card-header>
+      <br />
+      <ion-card-title>Nombre: {{dataProfile.get('fullName')}}</ion-card-title>
+      <br />
+      <ion-card-subtitle>
+        Casa - Familia: {{dataProfile.get('family')}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <i>
+        Título: {{dataProfile.get('title')}} <br />
+        Apellido: {{dataProfile.get('lastName')}}
+      </i>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
